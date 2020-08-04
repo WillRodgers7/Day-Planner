@@ -41,3 +41,11 @@ $(document).on("click", ".saveBtn", function () {
     var id = $(this).attr("id");
     console.log("ID: " + id);
 })
+$(document).on("click", ".saveBtn", function () {
+    //your code to store data into localstorage
+    var id = $(this).attr("id");
+    var note = $(this).siblings("textarea").val()
+    console.log("ID: ", id, "-", note);
+    localStorage.setItem(id, note)
+
+})
