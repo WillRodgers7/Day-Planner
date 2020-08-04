@@ -6,6 +6,13 @@ dt = DateTime.fromObject({
     numberingSystem: 'beng'
 })
 
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+
 var hourCheck = setInterval(hourGrab, 1500);
 
 
