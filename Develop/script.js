@@ -16,10 +16,10 @@ function hourGrab() {
     $(".time-block").each(function () {
         var imputHour = parseInt($(this).attr("id"));
         console.log(imputHour);
-        if (imputHour<currentHour) {
+        if (imputHour < currentHour) {
             $(this).attr("class", "past");
-        
-        }else if (imputHour===currentHour) {
+
+        } else if (imputHour === currentHour) {
             $(this).removeAttr("class", "past");
             $(this).attr("class", "present");
 
